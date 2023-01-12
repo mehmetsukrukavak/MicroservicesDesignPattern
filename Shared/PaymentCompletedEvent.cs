@@ -1,9 +1,9 @@
 ﻿using System;
 namespace Shared
 {
-	public class PaymentSuccessedEvent
+	public class PaymentCompletedEvent
 	{
-		public int orderId { get; set; }
+		public int OrderId { get; set; }
 
 		public string BuyerId { get; set; }
 	}

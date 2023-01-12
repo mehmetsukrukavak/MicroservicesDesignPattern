@@ -22,13 +22,13 @@ namespace Payment.API.Consumers
             {
                 _logger.LogInformation($"{context.Message.Payment.TotalPrice} TL. was withdrawn from Credit Card for UserId : {context.Message.BuyerId}");
 
-                await _publishEndPoint.Publish(new PaymentSuccessedEvent { BuyerId = context.Message.BuyerId, orderId = context.Message.OrderId });
+                await _publishEndPoint.Publish(new PaymentCompletedEvent { BuyerId = context.Message.BuyerId, OrderId = context.Message.OrderId });
             }
             else
             {
                 _logger.LogInformation($"{context.Message.Payment.TotalPrice} TL. wasn't withdrawn from Credit Card for UserId : {context.Message.BuyerId}");
 
-                await _publishEndPoint.Publish(new PaymentFailedEvent { BuyerId = context.Message.BuyerId, orderId = context.Message.OrderId, Message ="Not enough balance" });
+                await _publishEndPoint.Publish(new PaymentFailedEvent { BuyerId = context.Message.BuyerId, OrderId = context.Message.OrderId, Message ="Not enough balance" });
             }
         }
     }

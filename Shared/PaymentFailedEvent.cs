@@ -3,7 +3,7 @@ namespace Shared
 {
 	public class PaymentFailedEvent
 	{
-        public int orderId { get; set; }
+        public int OrderId { get; set; }
 
         public string BuyerId { get; set; }
 
