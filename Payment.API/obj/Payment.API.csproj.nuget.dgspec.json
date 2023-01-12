@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Payment.API.csproj": {}
+  },
+  "projects": {
+    "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Payment.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Payment.API.csproj",
+        "projectName": "Payment.API",
+        "projectPath": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Payment.API.csproj",
+        "packagesPath": "/Users/mehmetsukrukavak/.nuget/packages/",
+        "outputPath": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehmetsukrukavak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Shared/Shared.csproj": {
+                "projectPath": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Shared/Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Shared/Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Shared/Shared.csproj",
+        "projectName": "Shared",
+        "projectPath": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Shared/Shared.csproj",
+        "packagesPath": "/Users/mehmetsukrukavak/.nuget/packages/",
+        "outputPath": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/mehmetsukrukavak/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

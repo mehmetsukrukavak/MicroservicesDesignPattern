@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="Multiple (All)">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple (All)" Name="Multiple (All)">
+      <Items>
+        <StartupItem ItemId="{AB1B995D-3534-4438-BB62-A6823D03D6A4}" ItemName="Order.API" ConfigurationId="https" />
+        <StartupItem ItemId="{CF4D92AF-FC25-47BA-8F62-CB0109F9BA98}" ItemName="Payment.API" ConfigurationId="https" />
+        <StartupItem ItemId="{C0A70985-FF72-4F6D-A100-6D4E645D5E3B}" ItemName="Stock.API" ConfigurationId="https" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+    <MultiItemSolutionRunConfiguration Id="Order-Stock" Name="Order-Stock">
+      <Items>
+        <StartupItem ItemId="{AB1B995D-3534-4438-BB62-A6823D03D6A4}" ItemName="Order.API" ConfigurationId="https" />
+        <StartupItem ItemId="{C0A70985-FF72-4F6D-A100-6D4E645D5E3B}" ItemName="Stock.API" ConfigurationId="https" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.Order.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Stock.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Payment.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Consumers/StockReservedEventConsumer.cs" relfile="Payment.API/Consumers/StockReservedEventConsumer.cs" line="19" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MicroservicesDesignPatterns" expanded="True" selected="True">
+            <Node name="Payment.API" expanded="True">
+              <Node name="Consumers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
