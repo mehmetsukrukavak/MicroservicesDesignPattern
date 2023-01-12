@@ -28,7 +28,7 @@ namespace Payment.API.Consumers
             {
                 _logger.LogInformation($"{context.Message.Payment.TotalPrice} TL. wasn't withdrawn from Credit Card for UserId : {context.Message.BuyerId}");
 
-                await _publishEndPoint.Publish(new PaymentFailedEvent { BuyerId = context.Message.BuyerId, OrderId = context.Message.OrderId, Message ="Not enough balance" });
+                await _publishEndPoint.Publish(new PaymentFailedEvent { BuyerId = context.Message.BuyerId, OrderId = context.Message.OrderId, Message ="Not enough balance", OrderItems = context.Message.OrderItems });
             }
         }
     }
