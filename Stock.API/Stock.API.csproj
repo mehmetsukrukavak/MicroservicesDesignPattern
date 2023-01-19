@@ -38,4 +38,7 @@
     <Folder Include="Consumers\" />
     <Folder Include="Controllers\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.editorconfig" />
+  </ItemGroup>
 </Project>

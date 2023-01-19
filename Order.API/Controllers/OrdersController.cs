@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using Order.API.DTOs;
 using Order.API.Models;
 using Shared;
+using Shared.Events;
+using Shared.Interfaces;
 
 namespace Order.API.Controllers
 {
@@ -16,12 +18,15 @@ namespace Order.API.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly AppDbContext _context;
-        private readonly IPublishEndpoint _publishEndPoint;
+       
 
-        public OrdersController(AppDbContext context, IPublishEndpoint publishEndPoint)
+
+        private readonly ISendEndpointProvider _sendEndpointProvider;
+        public OrdersController(AppDbContext context, ISendEndpointProvider sendEndpointProvider)
         {
             _context = context;
-            _publishEndPoint = publishEndPoint;
+           
+            _sendEndpointProvider = sendEndpointProvider;
         }
 
         [HttpPost]
@@ -54,7 +59,7 @@ namespace Order.API.Controllers
             await _context.AddAsync(newOrder);
             await _context.SaveChangesAsync();
 
-            var orderCreatedEvent = new OrderCreatedEvent
+            var orderCreatedRequestEvent = new OrderCreatedRequestEvent
             {
                 BuyerId = orderCreate.BuyerId,
                 OrderId = newOrder.Id,
@@ -71,14 +76,17 @@ namespace Order.API.Controllers
 
             orderCreate.orderItems.ForEach(item =>
             {
-                orderCreatedEvent.orderItems.Add(new OrderItemMessage
+                orderCreatedRequestEvent.OrderItems.Add(new OrderItemMessage
                 {
                     
                     Count = item.Count,
                     ProductId = item.ProductId
                 });
             });
-            await _publishEndPoint.Publish(orderCreatedEvent);
+            var sendEndPoint = await _sendEndpointProvider.GetSendEndpoint(new Uri($"queue:{RabbitMQSettings.OrderSaga}"));
+
+            await sendEndPoint.Send<IOrderCreatedRequestEvent>(orderCreatedRequestEvent);
+         
             return Ok();
         }
     }
