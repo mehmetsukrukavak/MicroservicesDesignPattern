@@ -1,16 +1,19 @@
-﻿<Properties StartupConfiguration="{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}|Default">
+﻿<Properties StartupConfiguration="Order-Worker">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Consumers/StockReservedEventConsumer.cs" relfile="Payment.API/Consumers/StockReservedEventConsumer.cs" line="19" column="1" />
+      <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Order.API/Controllers/OrdersController.cs" relfile="Order.API/Controllers/OrdersController.cs" line="34" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.SagaStateMachineWorkerService PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SagaStateMachineWorkerService/Migrations/20230119102049_initial.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Stock.API/Program.cs">
     <Files>
-      <File FileName="SagaStateMachineWorkerService/Models/OrderStateMachine.cs" Line="37" Column="67" />
-      <File FileName="Shared/Interfaces/IOrderCreatedRequestEvent.cs" Line="4" Column="44" />
-      <File FileName="SagaStateMachineWorkerService/Models/OrderStateInstance.cs" Line="25" Column="40" />
-      <File FileName="SagaStateMachineWorkerService/Migrations/20230119102049_initial.cs" Line="1" Column="1" />
+      <File FileName="Stock.API/Consumers/OrderCreatedEventConsumer.cs" Line="73" Column="55" />
+      <File FileName="Shared/Events/StockReservedEvent.cs" Line="11" Column="10" />
+      <File FileName="Shared/Interfaces/IStockReservedEvent.cs" Line="8" Column="9" />
+      <File FileName="Shared/Events/StockNotReservedEvent.cs" Line="13" Column="1" />
+      <File FileName="Shared/Interfaces/IStockNotReservedEvent.cs" Line="8" Column="28" />
+      <File FileName="Stock.API/Program.cs" Line="31" Column="69" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,10 +21,7 @@
           <Node name="MicroservicesDesignPatterns" expanded="True" selected="True">
             <Node name="Order.API" expanded="True">
               <Node name="Controllers" expanded="True" />
-            </Node>
-            <Node name="Payment.API" expanded="True">
-              <Node name="Consumers" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Migrations" expanded="True" />
             </Node>
             <Node name="SagaStateMachineWorkerService" expanded="True">
               <Node name="Dependencies" expanded="True" />
@@ -31,6 +31,9 @@
             <Node name="Shared" expanded="True">
               <Node name="Events" expanded="True" />
               <Node name="Interfaces" expanded="True" />
+            </Node>
+            <Node name="Stock.API" expanded="True">
+              <Node name="Consumers" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -57,6 +60,13 @@
       <Items>
         <StartupItem ItemId="{AB1B995D-3534-4438-BB62-A6823D03D6A4}" ItemName="Order.API" ConfigurationId="https" />
         <StartupItem ItemId="{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}" ItemName="SagaStateMachineWorkerService" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+    <MultiItemSolutionRunConfiguration Id="Order-Stock-Worker" Name="Order-Stock-Worker">
+      <Items>
+        <StartupItem ItemId="{AB1B995D-3534-4438-BB62-A6823D03D6A4}" ItemName="Order.API" ConfigurationId="https" />
+        <StartupItem ItemId="{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}" ItemName="SagaStateMachineWorkerService" ConfigurationId="Default" />
+        <StartupItem ItemId="{C0A70985-FF72-4F6D-A100-6D4E645D5E3B}" ItemName="Stock.API" ConfigurationId="https" />
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>

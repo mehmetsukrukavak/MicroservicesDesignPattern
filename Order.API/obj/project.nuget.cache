@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dP1o9/vAZFGCqDvjKLZQvZSTXCCVYp/iLI4Lh//rxzA/15Nvunix2PGdWewU2yXZSABDpfezCzJ0X32wT6W/Yg==",
+  "dgSpecHash": "w80uDsCWC3KLT+VuX1ALH0CV0OoGzy/c8YlvGaUBfP6g+R2cEzZGQrqBF2HraWAwPJamRgn5sJDj7Ji1E1XbNQ==",
   "success": true,
   "projectFilePath": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Order.API/Order.API.csproj",
   "expectedPackageFiles": [

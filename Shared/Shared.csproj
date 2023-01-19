@@ -3,16 +3,20 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="MassTransit.AspNetCore" />
     <None Remove="Interfaces\" />
     <None Remove="Events\" />
+    <None Remove="MassTransit" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
     <Folder Include="Events\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="8.0.10" />
   </ItemGroup>
 </Project>

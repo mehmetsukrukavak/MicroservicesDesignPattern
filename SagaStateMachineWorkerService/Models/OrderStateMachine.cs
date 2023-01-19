@@ -1,5 +1,6 @@
 ﻿using System;
 using MassTransit;
+using Shared;
 using Shared.Interfaces;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -20,22 +21,25 @@ namespace SagaStateMachineWorkerService.Models
 			Initially(When(OrderCreatedRequestEvent).Then(context =>
 			{
 				context.Instance.BuyerId = context.Data.BuyerId;
-                context.Instance.OrderId = context.Data.OrderId;
-                context.Instance.CreatedDate = DateTime.Now;
+				context.Instance.OrderId = context.Data.OrderId;
+				context.Instance.CreatedDate = DateTime.Now;
 
-                context.Instance.CardName = context.Data.Payment.CardName;
-                context.Instance.CardNumber = context.Data.Payment.CardNumber;
+				context.Instance.CardName = context.Data.Payment.CardName;
+				context.Instance.CardNumber = context.Data.Payment.CardNumber;
 				context.Instance.CVV = context.Data.Payment.CVV;
 				context.Instance.Expiration = context.Data.Payment.Expiration;
 				context.Instance.TotalPrice = context.Data.Payment.TotalPrice;
 
-            }).Then(context =>
+			}).Then(context =>
 			{
 				Console.WriteLine($"OrderCreatedRequestEvent before : {context.Instance}");
-			}).TransitionTo(OrderCreated).Then(context =>
-            {
-                Console.WriteLine($"OrderCreatedRequestEvent after : {context.Instance}");
-            }));
+			})
+			.Publish(context => new OrderCreatedEvent(context.Instance.CorrelationId) { OrderItems = context.Data.OrderItems })
+			.TransitionTo(OrderCreated)
+			.Then(context =>
+			{
+				Console.WriteLine($"OrderCreatedRequestEvent after : {context.Instance}");
+			})); ;
 		}
 	}
 }

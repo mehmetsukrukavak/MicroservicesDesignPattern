@@ -481,6 +481,9 @@
       "Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MassTransit": "8.0.10"
+        },
         "compile": {
           "bin/placeholder/Shared.dll": {}
         },
