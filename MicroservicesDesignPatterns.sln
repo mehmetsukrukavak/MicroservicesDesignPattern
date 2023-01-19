@@ -11,6 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.API", "Payment.API\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{C4BECDB7-4A05-4DB4-9623-D239D7A3CF8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SagaStateMachineWorkerService", "SagaStateMachineWorkerService\SagaStateMachineWorkerService.csproj", "{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{596E7A31-E2A9-4F88-9D5C-9657648FE488}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +40,10 @@ Global
 		{C4BECDB7-4A05-4DB4-9623-D239D7A3CF8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4BECDB7-4A05-4DB4-9623-D239D7A3CF8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4BECDB7-4A05-4DB4-9623-D239D7A3CF8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

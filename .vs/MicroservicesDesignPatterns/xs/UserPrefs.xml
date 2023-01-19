@@ -1,5 +1,44 @@
-﻿<Properties StartupConfiguration="Multiple (All)">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+﻿<Properties StartupConfiguration="{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Consumers/StockReservedEventConsumer.cs" relfile="Payment.API/Consumers/StockReservedEventConsumer.cs" line="19" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.SagaStateMachineWorkerService PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SagaStateMachineWorkerService/Migrations/20230119102049_initial.cs">
+    <Files>
+      <File FileName="SagaStateMachineWorkerService/Models/OrderStateMachine.cs" Line="37" Column="67" />
+      <File FileName="Shared/Interfaces/IOrderCreatedRequestEvent.cs" Line="4" Column="44" />
+      <File FileName="SagaStateMachineWorkerService/Models/OrderStateInstance.cs" Line="25" Column="40" />
+      <File FileName="SagaStateMachineWorkerService/Migrations/20230119102049_initial.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MicroservicesDesignPatterns" expanded="True" selected="True">
+            <Node name="Order.API" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="Payment.API" expanded="True">
+              <Node name="Consumers" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="SagaStateMachineWorkerService" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="Shared" expanded="True">
+              <Node name="Events" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Stock.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple (All)" Name="Multiple (All)">
       <Items>
@@ -14,27 +53,14 @@
         <StartupItem ItemId="{C0A70985-FF72-4F6D-A100-6D4E645D5E3B}" ItemName="Stock.API" ConfigurationId="https" />
       </Items>
     </MultiItemSolutionRunConfiguration>
+    <MultiItemSolutionRunConfiguration Id="Order-Worker" Name="Order-Worker">
+      <Items>
+        <StartupItem ItemId="{AB1B995D-3534-4438-BB62-A6823D03D6A4}" ItemName="Order.API" ConfigurationId="https" />
+        <StartupItem ItemId="{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}" ItemName="SagaStateMachineWorkerService" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Order.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.Stock.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.Payment.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Consumers/StockReservedEventConsumer.cs" relfile="Payment.API/Consumers/StockReservedEventConsumer.cs" line="19" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MicroservicesDesignPatterns" expanded="True" selected="True">
-            <Node name="Payment.API" expanded="True">
-              <Node name="Consumers" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
 </Properties>
