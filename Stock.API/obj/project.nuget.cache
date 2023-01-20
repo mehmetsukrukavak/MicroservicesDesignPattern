@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j0AJNm+O0nD/yeIJ7hhc9OKVvLknMFn3PW93uHon/k4MnQrli3O2NwtppT9nK14nZxd4ePZIx6MZWtMM6gBapA==",
+  "dgSpecHash": "POmM/HU2g93LUuBFCsYGuZ+m9Pw/Gz8SPMl2c6hOUXg+OrVapGvFC9nwRaZ3KYdMxFhvi9mr643sRzeOZuBJag==",
   "success": true,
   "projectFilePath": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Stock.API/Stock.API.csproj",
   "expectedPackageFiles": [

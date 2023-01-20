@@ -1,24 +1,12 @@
 ﻿<Properties StartupConfiguration="Order-Worker">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Consumers/StockReservedEventConsumer.cs" relfile="Payment.API/Consumers/StockReservedEventConsumer.cs" line="19" column="1" />
-      <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Order.API/Controllers/OrdersController.cs" relfile="Order.API/Controllers/OrdersController.cs" line="34" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.SagaStateMachineWorkerService PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Stock.API/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Order.API/Controllers/OrdersController.cs">
     <Files>
-      <File FileName="Stock.API/Consumers/OrderCreatedEventConsumer.cs" Line="73" Column="55" />
-      <File FileName="Shared/Events/StockReservedEvent.cs" Line="11" Column="10" />
-      <File FileName="Shared/Interfaces/IStockReservedEvent.cs" Line="8" Column="9" />
-      <File FileName="Shared/Events/StockNotReservedEvent.cs" Line="13" Column="1" />
-      <File FileName="Shared/Interfaces/IStockNotReservedEvent.cs" Line="8" Column="28" />
-      <File FileName="Stock.API/Program.cs" Line="31" Column="69" />
+      <File FileName="Order.API/Controllers/OrdersController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MicroservicesDesignPatterns" expanded="True" selected="True">
+          <Node name="MicroservicesDesignPatterns" expanded="True">
             <Node name="Order.API" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Migrations" expanded="True" />
@@ -40,8 +28,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Stock.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Payment.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple (All)" Name="Multiple (All)">
       <Items>
@@ -70,7 +58,14 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Consumers/StockReservedEventConsumer.cs" relfile="Payment.API/Consumers/StockReservedEventConsumer.cs" line="19" column="1" />
+      <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Order.API/Controllers/OrdersController.cs" relfile="Order.API/Controllers/OrdersController.cs" line="34" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.SagaStateMachineWorkerService PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Order.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.Payment.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Stock.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

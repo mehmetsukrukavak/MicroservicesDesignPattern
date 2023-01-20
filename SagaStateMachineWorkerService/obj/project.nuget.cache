@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fXy1mVROZZsyTcIr5kgNxcK++HmZ46ZSkVQyCvk3QksSPnbqCnnLsdukuTZ88CxqRl+J6JWBPxyuW5LVF7rLPw==",
+  "dgSpecHash": "wMURibAVKnbf5AF2Dc+jYKCAd2YsdP9twD2sRcadCh6ySNqc/pc0UJs6SYX+jcxptDOrGK2uViOsYLtaAegynA==",
   "success": true,
   "projectFilePath": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/SagaStateMachineWorkerService/SagaStateMachineWorkerService.csproj",
   "expectedPackageFiles": [

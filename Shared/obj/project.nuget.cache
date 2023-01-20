@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zvFYXzwY9zsUyeVQoP2KjYnCtXGWuU7jQzTSxS0Q36F9Lb11oPFmamagnOoCjeUwD/rkjZ3AQVMb9tUX72R1Sg==",
+  "dgSpecHash": "F9bvOTxglu1GLcs7f7JpkRvet7yAFfJ7DLvFTxrTnCDcR1svimtZizYhcRq6WGxIn0GAEEYpZ7TO2B5eEm5EMg==",
   "success": true,
   "projectFilePath": "/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Shared/Shared.csproj",
   "expectedPackageFiles": [
