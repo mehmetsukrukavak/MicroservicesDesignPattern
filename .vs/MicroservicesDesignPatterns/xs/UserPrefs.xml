@@ -1,40 +1,16 @@
-﻿<Properties StartupConfiguration="Order-Worker">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Order.API/Controllers/OrdersController.cs">
-    <Files>
-      <File FileName="Order.API/Controllers/OrdersController.cs" Line="1" Column="1" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="MicroservicesDesignPatterns" expanded="True">
-            <Node name="Order.API" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-            </Node>
-            <Node name="SagaStateMachineWorkerService" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True" />
-            </Node>
-            <Node name="Shared" expanded="True">
-              <Node name="Events" expanded="True" />
-              <Node name="Interfaces" expanded="True" />
-            </Node>
-            <Node name="Stock.API" expanded="True">
-              <Node name="Consumers" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+﻿<Properties StartupConfiguration="Order-Stock-Worker">
   <MonoDevelop.Ide.ItemProperties.Payment.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Order.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.Stock.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.SagaStateMachineWorkerService PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple (All)" Name="Multiple (All)">
       <Items>
         <StartupItem ItemId="{AB1B995D-3534-4438-BB62-A6823D03D6A4}" ItemName="Order.API" ConfigurationId="https" />
         <StartupItem ItemId="{CF4D92AF-FC25-47BA-8F62-CB0109F9BA98}" ItemName="Payment.API" ConfigurationId="https" />
+        <StartupItem ItemId="{39BFB420-53DE-41EC-AB4A-373E19AFD1BA}" ItemName="SagaStateMachineWorkerService" ConfigurationId="Default" />
         <StartupItem ItemId="{C0A70985-FF72-4F6D-A100-6D4E645D5E3B}" ItemName="Stock.API" ConfigurationId="https" />
       </Items>
     </MultiItemSolutionRunConfiguration>
@@ -57,15 +33,39 @@
         <StartupItem ItemId="{C0A70985-FF72-4F6D-A100-6D4E645D5E3B}" ItemName="Stock.API" ConfigurationId="https" />
       </Items>
     </MultiItemSolutionRunConfiguration>
+    <MultiItemSolutionRunConfiguration Id="Order-Stock-Payment-Worker" Name="Order-Stock-Payment-Worker" />
   </MultiItemStartupConfigurations>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Consumers/StockReservedEventConsumer.cs" relfile="Payment.API/Consumers/StockReservedEventConsumer.cs" line="19" column="1" />
-      <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Order.API/Controllers/OrdersController.cs" relfile="Order.API/Controllers/OrdersController.cs" line="34" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.SagaStateMachineWorkerService PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Order.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.Stock.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Payment.API/Consumers/StockReservedRequestPaymentConsumer.cs">
+    <Files>
+      <File FileName="Order.API/Controllers/OrdersController.cs" Line="34" Column="1" />
+      <File FileName="SagaStateMachineWorkerService/Models/OrderStateMachine.cs" Line="61" Column="56" />
+      <File FileName="Shared/Interfaces/IStockReservedRequestPayment.cs" Line="11" Column="24" />
+      <File FileName="Shared/Events/StockReservedRequestPayment.cs" Line="16" Column="41" />
+      <File FileName="Shared/RabbitMQSettings.cs" Line="7" Column="76" />
+      <File FileName="Payment.API/Consumers/StockReservedRequestPaymentConsumer.cs" Line="30" Column="79" />
+      <File FileName="Shared/Events/StockReservedEvent.cs" Line="14" Column="43" />
+      <File FileName="Shared/Events/PaymentCompletedEvent.cs" Line="14" Column="42" />
+      <File FileName="Shared/Interfaces/IPaymentCompletedEvent.cs" Line="6" Column="60" />
+      <File FileName="Shared/Interfaces/IPaymentFailedEvent.cs" Line="10" Column="34" />
+      <File FileName="Shared/Events/PaymentFailedEvent.cs" Line="8" Column="53" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MicroservicesDesignPatterns" expanded="True">
+            <Node name="Payment.API">
+              <Node name="Consumers">
+                <Node name="StockReservedRequestPaymentConsumer.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
 </Properties>

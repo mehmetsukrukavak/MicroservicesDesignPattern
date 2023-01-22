@@ -4,7 +4,7 @@ namespace Shared
 	public class RabbitMQSettings
 	{
 		public const string OrderSaga = "order-saga-queue";
-        public const string PaymentStockReservedRequestQueueName = "order-stock-reserved-request-queuel";
+        public const string PaymentStockReservedRequestQueueName = "payment-stock-reserved-request-queuel";
 
 
 
