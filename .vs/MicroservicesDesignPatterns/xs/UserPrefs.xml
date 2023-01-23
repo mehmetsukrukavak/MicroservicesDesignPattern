@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="Order-Stock-Worker">
+﻿<Properties StartupConfiguration="Multiple (All)">
   <MonoDevelop.Ide.ItemProperties.Payment.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.Order.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.Stock.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
@@ -40,30 +40,16 @@
       <Breakpoint file="/Users/mehmetsukrukavak/Projects/MicroservicesDesignPattern/Payment.API/Consumers/StockReservedEventConsumer.cs" relfile="Payment.API/Consumers/StockReservedEventConsumer.cs" line="19" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Payment.API/Consumers/StockReservedRequestPaymentConsumer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shared/Events/PaymentCompletedEvent.cs">
     <Files>
-      <File FileName="Order.API/Controllers/OrdersController.cs" Line="34" Column="1" />
-      <File FileName="SagaStateMachineWorkerService/Models/OrderStateMachine.cs" Line="61" Column="56" />
-      <File FileName="Shared/Interfaces/IStockReservedRequestPayment.cs" Line="11" Column="24" />
-      <File FileName="Shared/Events/StockReservedRequestPayment.cs" Line="16" Column="41" />
-      <File FileName="Shared/RabbitMQSettings.cs" Line="7" Column="76" />
-      <File FileName="Payment.API/Consumers/StockReservedRequestPaymentConsumer.cs" Line="30" Column="79" />
-      <File FileName="Shared/Events/StockReservedEvent.cs" Line="14" Column="43" />
-      <File FileName="Shared/Events/PaymentCompletedEvent.cs" Line="14" Column="42" />
-      <File FileName="Shared/Interfaces/IPaymentCompletedEvent.cs" Line="6" Column="60" />
-      <File FileName="Shared/Interfaces/IPaymentFailedEvent.cs" Line="10" Column="34" />
-      <File FileName="Shared/Events/PaymentFailedEvent.cs" Line="8" Column="53" />
+      <File FileName="Payment.API/Program.cs" Line="27" Column="79" />
+      <File FileName="Payment.API/Consumers/StockReservedRequestPaymentConsumer.cs" Line="8" Column="50" />
+      <File FileName="Shared/Events/PaymentCompletedEvent.cs" Line="18" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MicroservicesDesignPatterns" expanded="True">
-            <Node name="Payment.API">
-              <Node name="Consumers">
-                <Node name="StockReservedRequestPaymentConsumer.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="MicroservicesDesignPatterns" expanded="True" />
         </State>
       </Pad>
     </Pads>
