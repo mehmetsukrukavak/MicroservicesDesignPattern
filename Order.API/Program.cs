@@ -19,12 +19,18 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMassTransit(x =>
 {
     x.AddConsumer<OrderRequestCompletedEventConsumer>();
+    x.AddConsumer<OrderRequestFailedEventConsumer>();
+
     x.UsingRabbitMq((context, cfg) =>
     {
         cfg.Host(config.GetConnectionString("RabbitMQ"));
-        cfg.ReceiveEndpoint(RabbitMQSettings.OrderPaymentCompletedEventQueueName, e =>
+        cfg.ReceiveEndpoint(RabbitMQSettings.OrderRequestCompletedEventQueueName, e =>
         {
             e.ConfigureConsumer<OrderRequestCompletedEventConsumer>(context);
+        });
+        cfg.ReceiveEndpoint(RabbitMQSettings.OrderRequestFailedEventQueueName, e =>
+        {
+            e.ConfigureConsumer<OrderRequestFailedEventConsumer>(context);
         });
     });
 });
