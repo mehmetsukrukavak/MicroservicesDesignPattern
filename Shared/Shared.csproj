@@ -11,10 +11,12 @@
     <None Remove="Interfaces\" />
     <None Remove="Events\" />
     <None Remove="MassTransit" />
+    <None Remove="Messages\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
     <Folder Include="Events\" />
+    <Folder Include="Messages\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MassTransit" Version="8.0.10" />

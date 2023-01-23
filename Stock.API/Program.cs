@@ -22,6 +22,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMassTransit(x =>
 {
     x.AddConsumer<OrderCreatedEventConsumer>();
+    x.AddConsumer<StockRollBackMessageConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
         cfg.Host(config.GetConnectionString("RabbitMQ"));
@@ -29,6 +30,10 @@ builder.Services.AddMassTransit(x =>
         cfg.ReceiveEndpoint(RabbitMQSettings.StockOrderCreatedEventQueueName, e =>
         {
             e.ConfigureConsumer<OrderCreatedEventConsumer>(context);
+        });
+        cfg.ReceiveEndpoint(RabbitMQSettings.StockRollBackMessageQueueName, e =>
+        {
+            e.ConfigureConsumer<StockRollBackMessageConsumer>(context);
         });
     });
 });
